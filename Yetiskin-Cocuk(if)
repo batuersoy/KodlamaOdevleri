@@ -1,0 +1,9 @@
+##Yetişkin-Çocuk##
+
+x= int(input("Yaş: "))
+
+if (x > 18):
+    print("Yetişkin")
+
+else:
+    print("Cocuk")
