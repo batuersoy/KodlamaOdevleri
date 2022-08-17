@@ -1,0 +1,108 @@
+class Motor():
+    model = "Hondacbr"
+    renk = "Siyah"
+    cc = 250
+    sene = 2015
+    
+    
+motor1 = Motor
+motor1 = Motor
+motor1
+motor1
+__main__.Motor
+motor1.model
+motor1.model
+'Hondacbr'
+dir(motor1)
+['__class__',
+ '__delattr__',
+ '__dict__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__module__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ '__weakref__',
+ 'cc',
+ 'model',
+ 'renk',
+ 'sene']
+def __init__(self):
+    print("init fonksiyonu çağrıldı")
+motor1 = Motor()
+motor1
+<__main__.Motor at 0x1eef2722070>
+dir(motor1)
+['__class__',
+ '__delattr__',
+ '__dict__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__module__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ '__weakref__',
+ 'cc',
+ 'model',
+ 'renk',
+ 'sene']
+class Motor():
+    def __init__(self,model,renk,beygir_gücü,silindir):
+        print("init fonksiyonu çağrıldı")
+        self.model = model
+        self.renk = renk
+        self.cc = cc
+        self.sene = sene
+self.sene = sene
+class Motor():
+    def __init__(self,model,renk,cc,sene):
+        print("init fonksiyonu çağrıldı")
+        self.model = model
+        self.renk = renk
+        self.cc = cc
+        self.sene = sene
+,250,2015
+motor1 = Motor("Hondacbr","siyah",250,2015)
+init fonksiyonu çağrıldı
+motor2 = Motor("Kawasaki","yesil",300,2010)
+init fonksiyonu çağrıldı
+motor3 = Motor("Hayabusa","turuncu",500,2020)
+​
+init fonksiyonu çağrıldı
+motor3.cc
+motor3.cc
+500
