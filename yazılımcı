@@ -1,0 +1,126 @@
+class Yazılımcı():
+    
+    def __init__(self,isim,soyisim,numara,maas,diller):
+        self.isim = isim
+        self.soyisim = soyisim
+        self.numara = numara
+        self.maas = maas
+        self.diller = diller
+    
+    def bilgilerigoster(self):
+        print("""
+        Yazılımcı objesinin özellikleri
+        
+        İsim : {}
+        
+        Soyisim : {}
+        
+        Numara : {}
+        
+        Maaş : {}
+        
+        Bildiği Diller : {}
+        
+        """.format(self.isim,self.soyisim,self.numara,self.maas,self.diller))
+    
+    def zam_yap(self,zam_miktarı):
+        print("Zam Yapılıyor...")
+        
+        self.maas += zam_miktarı
+        
+    def dil_ekle(self,yeni_dil):
+        print("Dil ekleniyor...")
+        self.diller.append(yeni_dil)
+        
+ 
+yazılımcı = Yazılımcı("Lionel","Messi",1234,2000,["arapca","japonca"])
+yazılımcı = Yazılımcı("Lionel","Messi",1234,2000,["arapca","japonca"])
+yazılımcı
+yazılımcı
+<__main__.Yazılımcı at 0x2633cee6b20>
+yazılımcı.bilgilerigoster()
+
+        Yazılımcı objesinin özellikleri
+        
+        İsim : Lionel
+        
+        Soyisim : Messi
+        
+        Numara : 1234
+        
+        Maaş : 2000
+        
+        Bildiği Diller : ['arapca', 'japonca']
+        
+        
+rusca
+yazılımcı.dil_ekle("rusca")
+Dil ekleniyor...
+yazılımcı.bilgilerigoster()
+
+        Yazılımcı objesinin özellikleri
+        
+        İsim : Lionel
+        
+        Soyisim : Messi
+        
+        Numara : 1234
+        
+        Maaş : 2000
+        
+        Bildiği Diller : ['arapca', 'japonca', 'rusca']
+        
+        
+yazılımcı2 = Yazılımcı("Cristiano","Ronaldo",1235,9000,["zazaca","kurtce"])
+​
+yazılımcı2.bilgilerigoster()
+
+        Yazılımcı objesinin özellikleri
+        
+        İsim : Cristiano
+        
+        Soyisim : Ronaldo
+        
+        Numara : 1235
+        
+        Maaş : 9000
+        
+        Bildiği Diller : ['zazaca', 'kurtce']
+        
+        
+yazılımcı2.zam_yap(150)
+Zam Yapılıyor...
+yazılımcı2.bilgilerigoster()
+
+        Yazılımcı objesinin özellikleri
+        
+        İsim : Cristiano
+        
+        Soyisim : Ronaldo
+        
+        Numara : 1235
+        
+        Maaş : 9450
+        
+        Bildiği Diller : ['zazaca', 'kurtce']
+        
+        
+class Basketci(Yazılımcı):
+    pass
+​
+    
+,
+basketci1 = Basketci("Michael","Jordan",111,2500,['yunanca','macarca'])
+basketci1.bilgilerigoster()
+
+        Yazılımcı objesinin özellikleri
+        
+        İsim : Michael
+        
+        Soyisim : Jordan
+        
+        Numara : 111
+        
+        Maaş : 2500
+        
+        Bildiği Diller : ['yunanca', 'macarca']
