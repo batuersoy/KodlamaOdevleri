@@ -1,0 +1,49 @@
+class Kitap():
+    
+    def __init__(self,isim,yazar,sayfa_sayısı,tür):
+        self.isim = isim
+        self.yazar = yazar
+        self.sayfa_sayısı = sayfa_sayısı
+        self.tür = tür
+kitap = Kitap("İstanbul Hatırası","Ahmet Ümit",561,"Polisiye")
+
+class Kitap():
+    
+    def __init__(self,isim,yazar,sayfa_sayısı,tür):
+        print("init fonksiyonu")
+        self.isim = isim
+        self.yazar = yazar
+        self.sayfa_sayısı = sayfa_sayısı
+        self.tür = tür
+    def __str__(self):
+        return "İsim: {}\nYazar: {}\nSayfa Sayısı: {}\nTürü {}".format(self.isim,self.yazar,self.sayfa_sayısı,self.tür)
+    def __len__(self):
+        return self.sayfa_sayısı
+kitap = Kitap("İstanbul Hatırası","Ahmet Ümit",561,"Polisiye")
+init fonksiyonu
+print(kitap)
+İsim: İstanbul Hatırası
+Yazar: Ahmet Ümit
+Sayfa Sayısı: 561
+Türü Polisiye
+class Kitap():
+    
+    def __init__(self,isim,yazar,sayfa_sayısı,tür):
+        print("init fonksiyonu")
+        self.isim = isim
+        self.yazar = yazar
+        self.sayfa_sayısı = sayfa_sayısı
+        self.tür = tür
+    
+    def __str__(self):
+        return "İsim: {}/nYazar: {}/nSayfa Sayısı: {}/nTürü: {}".format(self.isim,self.yazar,self.sayfa_sayısı,self.tür)
+    
+    def __len__(self):
+        return self.sayfa_sayısı
+    
+    def __del__(self):
+        print("Kitap objesi siliniyor...")
+kitap = Kitap("İstanbul Hatırası","Ahmet Ümit",561,"Polisiye")
+init fonksiyonu
+del kitap
+Kitap objesi siliniyor...
