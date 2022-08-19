@@ -1,0 +1,7 @@
+a = int(input("Sayı giriniz: "))
+    
+if a % 2 == 0:
+    print("Çift")
+    
+else:
+    print("Tek")
